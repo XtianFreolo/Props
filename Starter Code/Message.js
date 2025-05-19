@@ -1,8 +1,8 @@
-function Message (/* TODO: Take the props. */)
+function Message ({ children }) 
 {
 	return (
-		<div>
-			<!-- TODO: Render children. -->
+		<div style={{ color: 'teal', fontWeight: 'bold', marginTop: '5px'}}>
+			{children}
 		</div>
 	);
 }
