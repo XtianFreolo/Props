@@ -1,3 +1,5 @@
+import React from "react";
+
 function InventoryItem ({ name, type, quantity = 0, price = 0 })
 {
 	// To calculate inventory these are set
@@ -5,6 +7,7 @@ function InventoryItem ({ name, type, quantity = 0, price = 0 })
 	const isLowStock = quantity <= 5; 
 	const isHighValue = totalValue > 1000;
 
+	// messages for low stock and high tock items 
 	return (
 		<div style ={{ border: '1px solid gray', padding: '10px', marginBottom: '10px' }}>
 			<h2>{name}</h2>
@@ -23,3 +26,5 @@ function InventoryItem ({ name, type, quantity = 0, price = 0 })
 		</div>
 	);
 }
+
+export default InventoryItem;

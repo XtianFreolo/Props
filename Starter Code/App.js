@@ -1,3 +1,8 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import InventoryItem from "./InventoryItem";
+
+
 function App ()
 {
 	const inventoryItems = [
@@ -12,12 +17,14 @@ function App ()
 		{name: "Communication Radio", type: "Technology", quantity: 3, price: 199.99},
 		{name: "Thruster Fuel", type: "Fuel", quantity: 50, price: 45.00}
 	];
-
+		// This loops the inventoryItems array and displaying them 
 	return (
 		<div>
-			<h1>Inventory</h1>
+			<h1>Space Craft Inventory</h1>
 			<ol>
-				<!-- TODO: Render each inventory item as a list item. -->
+			{inventoryItems.map((items, index) => (
+				<InventoryItems key={index} item={items} />
+			))}
 			</ol>
 		</div>
 	);
