@@ -23,7 +23,7 @@ function App ()
 			<h1>Space Craft Inventory</h1>
 			<ol>
 			{inventoryItems.map((items, index) => (
-				<InventoryItems key={index} item={items} />
+				<InventoryItem key={index} item={items} />
 			))}
 			</ol>
 		</div>

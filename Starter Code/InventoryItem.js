@@ -1,4 +1,5 @@
 import React from "react";
+import Message from "./Message";
 
 function InventoryItem ({ name, type, quantity = 0, price = 0 })
 {
